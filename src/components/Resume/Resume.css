@@ -1,0 +1,28 @@
+.mainResume{
+    margin: 0 auto;
+    width: 100vw;
+
+}
+.resume{
+    width: 80%;
+    height: auto;
+    padding: 2% 10%;
+    margin: 0 auto;
+    /* clear: both; */
+}
+.introResume{
+    color: rgb(79, 252, 200);
+    font-family: 'Nunito', sans-serif;
+
+}
+.button{
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 1px 2px grey;
+    align-items: center
+}
+
+.main>h1{
+    margin: 0;
+    font-family: 'Catamaran', sans-serif
+}

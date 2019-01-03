@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 2em;
+    margin: 0 auto;
+}
+
+.projectsIntro{
+    margin: 7% 14%;
+    color: rgb(79, 252, 200);
+    font-family: 'Nunito', sans-serif;
+}
+
+.images{
+    width: 100%;
+    border: black 2px solid;
+    box-shadow: 3px 2px 2px 3px rgb(83, 83, 83);
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+
+.module {
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em auto;
+    height: 37vh;
+    width: 80%;
+}
+
+
+.whatch{
+    grid-column: 1 / 1;
+    grid-row: 1;
+}
+
+.rain{
+
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+.hike{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+
+}
+
+.word{
+    grid-column: 1;
+    grid-row: 2 / 2;
+}
