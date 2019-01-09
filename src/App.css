@@ -16,6 +16,7 @@ nav{
   color: white;
   font-size: 2rem;
   text-align: right;
+  padding: 2%;
 }
 
 a {
@@ -23,6 +24,10 @@ a {
   margin: 0 3%;
   text-decoration: none;
 }
+nav>a:hover{
+  color: rgb(130, 253, 212)
+}
 a:visited {
   color:rgb(255, 255, 255);
 }
+

@@ -8,7 +8,7 @@ import './Projects.css'
 const Projects = props =>(
     <div className="projects">
 
-        <h1 className="projectsIntro">Some of my recent developments...</h1>
+        <h1 className="projectsIntro green">Some of my recent developments...</h1>
 
         <div className="grid-container">
             <div className="module whatch">

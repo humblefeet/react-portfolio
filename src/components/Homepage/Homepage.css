@@ -1,6 +1,13 @@
 .intro{
     margin: 7% 14%;
-    color: rgb(79, 252, 200);
-    font-family: 'Nunito', sans-serif;
-    height: 60vh
+    color: rgb(255, 255, 255);
+    font-family: 'Libre Franklin', sans-serif;
+    height: 60vh;
+    line-height: 1.5em
+}
+
+
+.name{
+    margin: 0;
+    line-height: 1em;
 }

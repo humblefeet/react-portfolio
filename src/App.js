@@ -16,9 +16,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <nav>
-            <span className="navName">
-              <Link to="/">Home</Link>
-            </span>
+            <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/resume">Resume</Link>
           </nav>

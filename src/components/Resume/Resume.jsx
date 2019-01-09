@@ -1,11 +1,11 @@
 import React from 'react';
 import './Resume.css'
-import ResumeImage from '../../images/matthieubourgois_resume.jpg'
+import ResumeImage from '../../images/matthieubourgois_resume_2019.jpg'
 import ResumeFile from '../../files/matthieubourgois_resume.pdf'
 
 const Resume = () => (
     <div className="mainResume">
-        <h1 className="introResume" >Resume</h1>
+        <h1 className="introResume green" >Resume</h1>
         <a href={ResumeFile} download>
             <button className="button">Download</button>
         </a>
