@@ -8,14 +8,15 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   position: relative;
+  overflow: auto;
 }
 
 nav{
   color: white;
-  font-size: 2rem;
-  text-align: right;
+  font-size: 1.2rem;
+  text-align: center;
   padding: 2%;
 }
 
@@ -31,3 +32,27 @@ a:visited {
   color:rgb(255, 255, 255);
 }
 
+@media screen and (min-width: 1080px){
+  body{
+    background-image: url(./images/valleyOfFire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 5%;
+    position: relative;
+  }
+
+  nav{
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 2%;
+  }
+  
+  a {
+    color:rgb(255, 255, 255);
+    margin: 0 3%;
+    text-decoration: none;
+  }
+}

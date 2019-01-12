@@ -4,9 +4,9 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "whatch"
-        "rain" 
         "hike"
-        "word";
+        "word"
+        "rain" ;
     grid-gap: 2em;
     margin: 0 auto;
 }
@@ -17,8 +17,8 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "whatch rain" 
-            "hike word";
+            "whatch hike " 
+            "word rain";
     }
 }
 
