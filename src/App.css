@@ -3,42 +3,55 @@
 }
 
 body{
-  background-image: url(./images/valleyOfFire.jpg);
+  /* background-image: url(./images/greyReflection.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   padding-bottom: 4%;
-  position: relative;
-  overflow: auto;
+  /* position: relative; */
+  margin-bottom: 5em;
+  color: #253148;
+  background-color: #C8D4E9;
+  background-image: linear-gradient(to  bottom right, #E12202, #C8D4E9, #139CAE);
 }
-
+.main{
+  height: 80vh;
+  width: 100vw;
+  margin: 0 auto;
+  overflow: auto
+}
 nav{
+  /* background-color: #253148; */
+  /* background-image: linear-gradient(#C8D4E9, #E12202 ); */
   color: white;
   font-size: 1.2rem;
   text-align: center;
   padding: 2%;
+  margin: 0 auto;
 }
 
 a {
   color:rgb(255, 255, 255);
-  margin: 0 3%;
+  margin: 0 1em;
   text-decoration: none;
+  align-content: center;
 }
+
 nav>a:hover{
-  color: rgb(130, 253, 212)
-}
+  color: #253148}
+
 a:visited {
   color:rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 1080px){
   body{
-    background-image: url(./images/valleyOfFire.jpg);
+    /* background-image: url(./images/valleyOfFire.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     padding-bottom: 5%;
     position: relative;
   }
@@ -46,7 +59,7 @@ a:visited {
   nav{
     color: white;
     font-size: 2rem;
-    text-align: right;
+    text-align: center;
     padding: 2%;
   }
   
@@ -54,5 +67,9 @@ a:visited {
     color:rgb(255, 255, 255);
     margin: 0 3%;
     text-decoration: none;
+  }
+
+  .main{
+    width: 70vw;
   }
 }

@@ -1,13 +1,38 @@
-.intro{
-    margin: 7% 14%;
-    color: rgb(255, 255, 255);
+.homepage{
     font-family: 'Libre Franklin', sans-serif;
-    height: 60vh;
-    line-height: 1.5em
+    line-height: 1.5em;
+    margin: 7% 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+                        "myNameIs myFace"
+                        "name myFace"
+                        "description description";
+    grid-gap: 1em;
+    text-align: center;
 }
-
 
 .name{
     margin: 0;
     line-height: 1em;
+    grid-area: name;
+    color: white;
+    font-weight: 600;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.myNameIs{
+    grid-area: myNameIs
+}
+
+.myFace{
+    margin: 0 auto;
+    grid-area: myFace;
+    height: 10em;
+    border-radius: 10px
+}
+
+.description{
+    grid-area: description;
 }

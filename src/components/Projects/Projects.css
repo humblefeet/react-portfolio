@@ -24,7 +24,7 @@
 
 .projectsIntro{
     margin: 2% 14%;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -39,8 +39,8 @@
 
 .module {
     align-items: center;
-    justify-content: space-around;
-    margin: 1em auto;
+    /* justify-content: space-around; */
+    margin: 2em auto;
     height: 37vh;
     width: 80%;
 }

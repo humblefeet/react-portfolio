@@ -1,17 +1,17 @@
 import React from 'react';
 import  './Footer.css'
-import Portrait from '../../images/portrait.jpg'
+// import Portrait from '../../images/portrait.jpg'
 import gmail from '../../images/gmail.png'
 import github from '../../images/github.png'
 import linkedIn from '../../images/linkedin.png'
 
 const Contact = props => (
     <div className="Footer">
-        <img 
+        {/* <img 
             alt="portrait"
             className="icons portrait"
             src={Portrait}>
-        </img>
+        </img> */}
         <div className="lowContact">
             <a  href="https://www.linkedin.com/in/matthieu-bourgois/">
                 <img className="icons"

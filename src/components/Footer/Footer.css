@@ -1,44 +1,37 @@
-
-.contact{
-    height: 100%;
-    width: 100%;
-    padding: 1em;
-}
-
 .big{
     color: rgb(255, 254, 254);
 }
 
-
 .portrait{
     border-radius: 50%;
-    height: 6em;
+    /* height: 6em; */
     float: right;
     margin-right: .5em 2em;
     border: 2px white solid
 }
 
 .icons{
-    height: 4em;
+    height: 2.5em;
     align-items: center;
-    margin: .5em;
+    margin: .5em auto;
 }
 .lowContact{
     width: 100%;
 }
 
 .Footer {
-    position: absolute;
+    position: fixed;
     bottom:0;
     width:100%;
-    height: 5%;   
+    height: 5em;   
     clear: both;
+    text-align: center;
 }
 
 @media screen and (min-width: 1080px){
     .icons{
         height: 4em;
-        float: left;
+        /* float: left; */
         margin: .5em;
     }
 }
