@@ -6,8 +6,6 @@ class Homepage extends Component {
     render(){
         return(
             <div className="homepage">
-                    <h2 className="myNameIs">My name is</h2>
-
                     <h1 className="name">Matthieu Bourgois</h1>
 
                     <img 

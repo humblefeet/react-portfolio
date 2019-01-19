@@ -1,37 +1,21 @@
-.big{
-    color: rgb(255, 254, 254);
-}
-
-.portrait{
-    border-radius: 50%;
-    /* height: 6em; */
-    float: right;
-    margin-right: .5em 2em;
-    border: 2px white solid
-}
-
 .icons{
     height: 2.5em;
     align-items: center;
     margin: .5em auto;
-}
-.lowContact{
-    width: 100%;
+    justify-content: space-evenly
+
 }
 
 .Footer {
-    position: fixed;
-    bottom:0;
-    width:100%;
-    height: 5em;   
-    clear: both;
+    display: block;
+    height: 5em;
+    margin:  0 auto;   
     text-align: center;
 }
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 980px){
     .icons{
         height: 4em;
-        /* float: left; */
         margin: .5em;
     }
 }

@@ -7,7 +7,7 @@
         "hike"
         "word"
         "rain" ;
-    grid-gap: 2em;
+    grid-gap: 1em;
     margin: 0 auto;
 }
 
@@ -24,8 +24,8 @@
 
 .projectsIntro{
     margin: 2% 14%;
-    /* color: rgb(255, 255, 255); */
-    font-family: 'Libre Franklin', sans-serif;
+    color: #253c66;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .images{

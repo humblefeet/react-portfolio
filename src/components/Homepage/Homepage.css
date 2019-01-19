@@ -3,36 +3,88 @@
     line-height: 1.5em;
     margin: 7% 14%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 40%;
     grid-template-areas: 
-                        "myNameIs myFace"
-                        "name myFace"
-                        "description description";
-    grid-gap: 1em;
-    text-align: center;
+                        "name"
+                        "myFace"
+                        "description";
 }
 
 .name{
+    font-size: 4em;
     margin: 0;
     line-height: 1em;
     grid-area: name;
-    color: white;
-    font-weight: 600;
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
+    color: #253c66;
+    font-weight: 500;
+    padding: 2% 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 
-.myNameIs{
-    grid-area: myNameIs
 }
 
 .myFace{
-    margin: 0 auto;
+    width: 50%;
+    margin: 20% auto;
     grid-area: myFace;
-    height: 10em;
-    border-radius: 10px
+    vertical-align: bottom;
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px 4px rgba(128, 128, 128, 0.589);
 }
 
 .description{
     grid-area: description;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 690px){
+
+    .homepage{
+        font-family: 'Libre Franklin', sans-serif;
+        line-height: 1.5em;
+        margin: 7% 14%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40% 30% 30%;
+        grid-template-areas: 
+                            "name myFace"
+                            "name myFace"
+                            "description description";
+    }
+
+    .myFace{
+        width: 50%;
+        margin-bottom: 20%;
+        margin-top: 0;
+    }
+
+    .name{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1080px){
+
+    .homepage{
+        font-family: 'Libre Franklin', sans-serif;
+        line-height: 1.5em;
+        margin: 7% 14%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40% 30% 30%;
+        grid-template-areas: 
+                            ". myFace"
+                            "name name"
+                            "description description";
+    }
+
+    .myFace{
+        width: 50%;
+        margin-bottom: 20%;
+        margin-top: 0;
+    }
+
+
 }

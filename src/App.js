@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Homepage from './components/Homepage/Homepage'
 import Projects from './components/Projects/Projects'
-import Footer from './components/Footer/Footer'
 import Resume from './components/Resume/Resume'
 import {
   BrowserRouter as Router,
@@ -25,7 +24,6 @@ class App extends Component {
             <Route path="/projects" component={Projects}></Route>
             <Route path="/resume" component={Resume}></Route>
           </div>
-          <Footer/>
 
         </div>
       </Router>
