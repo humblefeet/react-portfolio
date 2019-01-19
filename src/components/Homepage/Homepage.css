@@ -12,7 +12,7 @@
 }
 
 .name{
-    font-size: 4em;
+    font-size: 4rem;
     margin: 0;
     line-height: 1em;
     grid-area: name;
@@ -21,16 +21,23 @@
     padding: 2% 0;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-
+    vertical-align: middle;
 }
 
-.myFace{
-    width: 50%;
-    margin: 20% auto;
+.faceWrapper{
     grid-area: myFace;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
+    /* width: 50%; */
+    margin:0 auto 20%;
+    padding: 10%;
+    position: justify;
+    justify-content: space-between;
+}
+.myFace{
+    width: 100%;
     border-radius: 15%;
     box-shadow: 2px 2px 2px 4px rgba(128, 128, 128, 0.589);
+    align-self: center;
 }
 
 .description{
@@ -39,7 +46,7 @@
     color: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 690px){
+@media screen and (min-width: 560px){
 
     .homepage{
         font-family: 'Libre Franklin', sans-serif;
@@ -47,25 +54,34 @@
         margin: 7% 14%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 30% 30%;
+        grid-template-rows: 40% 1fr;
         grid-template-areas: 
-                            "name myFace"
                             "name myFace"
                             "description description";
     }
 
     .myFace{
-        width: 50%;
+        min-width: 70%;
         margin-bottom: 20%;
         margin-top: 0;
     }
 
+
     .name{
         text-align: left;
+        /* font-size: 3rem; */
     }
 }
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 700px){
+    .homepage{
+        grid-template-rows: 50% 1fr;
+
+    }
+}
+
+
+@media screen and (min-width: 930px){
 
     .homepage{
         font-family: 'Libre Franklin', sans-serif;
@@ -73,7 +89,7 @@
         margin: 7% 14%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 30% 30%;
+        grid-template-rows: 45% 15% 1fr;
         grid-template-areas: 
                             ". myFace"
                             "name name"
@@ -81,8 +97,8 @@
     }
 
     .myFace{
-        width: 50%;
-        margin-bottom: 20%;
+        min-width: 90%;
+        /* margin-bottom: 20%; */
         margin-top: 0;
     }
 

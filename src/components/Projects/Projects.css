@@ -7,19 +7,7 @@
         "hike"
         "word"
         "rain" ;
-    grid-gap: 1em;
     margin: 0 auto;
-}
-
-@media screen and (min-width: 1080px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "whatch hike " 
-            "word rain";
-    }
 }
 
 .projectsIntro{
@@ -36,11 +24,10 @@
     margin: 0 auto;
 }
 
-
 .module {
     align-items: center;
     /* justify-content: space-around; */
-    margin: 2em auto;
+    margin: 1em auto;
     height: 37vh;
     width: 80%;
 }
@@ -51,15 +38,46 @@
 }
 
 .rain{
-
+    width: 50%;
     grid-area: rain
 }
 
 .hike{
     grid-area: hike
-
 }
 
 .word{
     grid-area: word
+}
+
+@media screen and (min-width: 650px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "whatch"
+            "hike" 
+            "word"
+            "rain";
+        grid-gap: 2em;
+    }
+
+    .module {
+        align-items: center;
+        margin: 0 auto;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "whatch hike " 
+            "word rain";
+        grid-gap: 1em;
+    }
 }

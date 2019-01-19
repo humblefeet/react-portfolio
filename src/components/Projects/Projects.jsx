@@ -1,9 +1,13 @@
 import React from 'react';
-import hikeHitch from '../../images/hikeHitch.png'
-import rainOrShine from '../../images/rainOrShine.png'
-import unscrambler from '../../images/unscrambler.png'
-import whatch from '../../images/whatch.png'
+// import hikeHitch from '../../images/hikeHitch.png'
+// import rainOrShine from '../../images/rainOrShine.png'
+// import unscrambler from '../../images/unscrambler.png'
+// import whatch from '../../images/whatch.png'
 import './Projects.css'
+const whatch = "https://imgur.com/EfAzTDM.png"
+const hikeHitch = "https://i.imgur.com/2R9Tcvd.jpg?1.png"
+const unscrambler = "https://i.imgur.com/IuXeeJh.png?1.png"
+const rainOrShine = "https://i.imgur.com/lLBHBc4.png?1.png"
 
 const Projects = props =>(
     <div className="projects">
