@@ -28,16 +28,19 @@
     grid-area: myFace;
     /* vertical-align: bottom; */
     /* width: 50%; */
-    margin:0 auto 20%;
+    margin:0 auto 5%;
     padding: 10%;
+    display: flex;
+    align-items: center;
     position: justify;
     justify-content: space-between;
 }
 .myFace{
-    width: 100%;
+    width: 85%;
     border-radius: 15%;
     box-shadow: 2px 2px 2px 4px rgba(128, 128, 128, 0.589);
     align-self: center;
+    margin: 10% auto;
 }
 
 .description{
@@ -46,7 +49,7 @@
     color: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 560px){
+@media screen and (min-width: 615px){
 
     .homepage{
         font-family: 'Libre Franklin', sans-serif;
@@ -58,25 +61,21 @@
         grid-template-areas: 
                             "name myFace"
                             "description description";
+        grid-gap: 1em;
     }
 
     .myFace{
-        min-width: 70%;
-        margin-bottom: 20%;
-        margin-top: 0;
+        min-width: 65%;
+        margin: 10% auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
     .name{
         text-align: left;
         /* font-size: 3rem; */
-    }
-}
-
-@media screen and (min-width: 700px){
-    .homepage{
-        grid-template-rows: 50% 1fr;
-
     }
 }
 
@@ -97,7 +96,10 @@
     }
 
     .myFace{
-        min-width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 80%;
         /* margin-bottom: 20%; */
         margin-top: 0;
     }

@@ -1,16 +1,21 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, .2fr .7fr);
     grid-template-areas:
         "whatch"
+        "infoWhatch"
         "hike"
+        "infoHike"
         "word"
-        "rain" ;
-    margin: 0 auto;
+        "infoWord"
+        "rain" 
+        "infoRain";
+    margin: 5% auto  0;
 }
 
 .projectsIntro{
+    text-align: center;
     margin: 2% 14%;
     color: #253c66;
     font-family: 'Quicksand', sans-serif;
@@ -24,17 +29,28 @@
     margin: 0 auto;
 }
 
-.module {
-    align-items: center;
-    /* justify-content: space-around; */
-    margin: 1em auto;
-    height: 37vh;
-    width: 80%;
+.images, .module{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
 }
 
+.module {
+    margin: 0 auto;
+    height: 30vh;
+    width: 100%;
+    padding-top: 10%;
+}
 
+.info{
+    padding-left: 10%;
+}
 .whatch{
     grid-area: whatch
+}
+
+.infoWhatch{
+    grid-area: infoWhatch
 }
 
 .rain{
@@ -42,28 +58,49 @@
     grid-area: rain
 }
 
+.infoRain{
+    grid-area: infoRain
+}
+
 .hike{
     grid-area: hike
+}
+
+.infoHike{
+    grid-area:  infoHike
 }
 
 .word{
     grid-area: word
 }
 
+.infoWord{
+    grid-area: infoWord
+}
+
+li{
+    list-style-type: circle;
+    width:  100%;
+
+}
+
 @media screen and (min-width: 650px){
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
         grid-template-areas:
-            "whatch"
-            "hike" 
-            "word"
-            "rain";
-        grid-gap: 2em;
+            "whatch infoWhatch" 
+            "infoHike hike"
+            "word infoWord"
+            "infoRain rain";
+        grid-gap: 1em;
+        max-width: 90%;
     }
 
     .module {
+        display: flex;
+        justify-content: space-around;
         align-items: center;
         margin: 0 auto;
         height: 50%;
@@ -74,10 +111,20 @@
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
         grid-template-areas:
-            "whatch hike " 
-            "word rain";
+            "whatch infoWhatch" 
+            "infoHike hike"
+            "word infoWord"
+            "infoRain rain";
         grid-gap: 1em;
+        grid-column-gap: 1em;
     }
+
+    .module{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }
