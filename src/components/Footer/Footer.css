@@ -1,14 +1,16 @@
 .icons{
+    /* display: flex; */
+    flex-direction: column;
     height: 2.5em;
     align-items: center;
-    margin: .5em auto;
+    /* margin: .5em auto; */
     justify-content: space-evenly
 
 }
 
 .Footer {
-    display: block;
-    height: 5em;
+    /* display: block; */
+    /* height: 5em; */
     margin:  0 auto;   
     text-align: center;
 }

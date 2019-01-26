@@ -2,19 +2,15 @@
     margin: 0 auto;
 }
 
-/* .resume{
-    width: 70%;
-    margin: 0 auto;
-} */
 
 .introResume{
-    /* margin: 2% 14%; */
     text-align: center;
     color: #253c66;
     font-family: 'Quicksand', sans-serif;
 
 }
 .button{
+    display: flex;
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 1px 2px grey;
@@ -22,7 +18,7 @@
     display: inline-block
 }
 
-.top{
+/* .top{
     display: block;
     text-align: center;
-}
+} */

@@ -3,22 +3,21 @@ import './App.css';
 import Homepage from './components/Homepage/Homepage'
 import Projects from './components/Projects/Projects'
 import Resume from './components/Resume/Resume'
+import NavBar from './components/NavBar/NavBar'
 import {
   BrowserRouter as Router,
-  Link,
+  // Link,
   Route
 } from 'react-router-dom'
+// import { Button } from 'react-bootstrap';
+
 
 class App extends Component {
   render(){
     return(
       <Router>
         <div className="App">
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/resume">Resume</Link>
-          </nav>
+          <NavBar/>
           <div className="main">
             <Route exact path="/" component={Homepage}></Route>
             <Route path="/projects" component={Projects}></Route>

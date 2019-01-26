@@ -1,22 +1,9 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(4,  .4fr  .7fr);
-    grid-template-areas:
-        "whatch"
-        "infoWhatch"
-        "hike"
-        "infoHike"
-        "word"
-        "infoWord"
-        "rain" 
-        "infoRain";
-    margin: 5% auto ;
+    padding-bottom: 10%;
 }
 
 .projectsIntro{
     text-align: center;
-    margin: 2% 14%;
     color: #253c66;
     font-family: 'Quicksand', sans-serif;
 }
@@ -29,61 +16,31 @@
     margin: 0 auto;
 }
 
-.images, .module{
-    display: flex;
-    align-items: baseline;
-    justify-content: start;
+.module{
+    margin: 0 auto 5%;
 }
 
-.module {
-    margin: 0 auto;
-    height: 25vh;
-    width: 100%;
-    padding-top: 5%;
+.images, .module{
+    display: flex;
+    align-items: baseline; 
+    justify-content: center;
 }
+
+.row{
+    margin: 0 auto 5%;
+}
+
 .info{
     width: 90%;
     margin:0 auto;
-}
-.whatch{
-    grid-area: whatch
-}
-
-.infoWhatch{
-    grid-area: infoWhatch
-}
-
-.rain{
-    /* width: 50%; */
-    grid-area: rain
-}
-
-.infoRain{
-    grid-area: infoRain
-}
-
-.hike{
-    grid-area: hike
-}
-
-.infoHike{
-    grid-area:  infoHike
-}
-
-.word{
-    grid-area: word
-}
-
-.infoWord{
-    grid-area: infoWord
 }
 
 ul{
     display:  inline-block;
     columns: 3;
     width: 100%;
-    padding-inline-start: 20px;
-    margin: 5% auto;
+    padding-inline-start: 47px;
+    margin: 3% auto;
 }
 
 li{
@@ -99,75 +56,9 @@ li{
 }
 
 h5{
-    margin-bottom: 0;
+    margin-bottom: 2%;
 }
 
 .info>h3, .info>h5, .info>li{
     text-align:  center;
-}
-@media screen and (min-width: 490px){
-    grid-template-rows: repeat(4,  .5fr  .8fr);
-
-}
-
-@media screen and (min-width: 800px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4,.3fr .7fr));
-        grid-template-areas:
-            "whatch infoWhatch" 
-            "infoHike hike"
-            "word infoWord"
-            "infoRain rain";
-        grid-gap: .5em;
-        max-width: 90%;
-    }
-
-    .module {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 auto;
-        height: 50%;
-    }
-    .info{
-        padding-left: 10%;
-    }
-    
-}
-
-@media screen and (min-width: 800px){
-    .grid-container{
-        width: 90%
-    }
-}
-
-@media screen and (min-width: 1080px){
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr .75fr  .75fr  .75fr;
-        grid-template-areas:
-            "whatch infoWhatch" 
-            "infoHike hike"
-            "word infoWord"
-            "infoRain rain";
-        grid-gap: 2em;
-        grid-column-gap: 1em;
-    }
-
-    .module{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .rainPics{
-        margin: 0 2%;
-        width: 100%;
-    }
-    .info{
-        padding-left: 10%;
-    }
 }

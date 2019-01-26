@@ -12,10 +12,11 @@ body{
   background-color: #C8D4E9;
   background-image: linear-gradient(to  bottom , rgb(233, 235, 236), rgb(179, 193, 219), rgba(100, 1, 50, 0.986));
 }
+
 .main{
   height: 100vh;
   width: 90vw;
-  margin: 0 1em;
+  margin: 0 auto;
   align-content: center;
 }
 nav{
@@ -39,11 +40,6 @@ text-decoration: underline;
 a:visited {
   color: #253148;
 }
-
-@media screen and (min-width: 720px){
-
-}
-
 
 
 @media screen and (min-width: 1080px){
@@ -71,3 +67,15 @@ a:visited {
     align-content: center;
   }
 }
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
