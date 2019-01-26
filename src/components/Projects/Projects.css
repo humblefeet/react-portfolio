@@ -11,7 +11,7 @@
         "infoWord"
         "rain" 
         "infoRain";
-    margin: 5% auto  0;
+    margin: 5% auto ;
 }
 
 .projectsIntro{
@@ -32,18 +32,18 @@
 .images, .module{
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: start;
 }
 
 .module {
     margin: 0 auto;
-    height: 30vh;
+    height: 25vh;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
-
 .info{
-    padding-left: 10%;
+    width: 90%;
+    margin:0 auto;
 }
 .whatch{
     grid-area: whatch
@@ -54,7 +54,7 @@
 }
 
 .rain{
-    width: 50%;
+    /* width: 50%; */
     grid-area: rain
 }
 
@@ -78,13 +78,44 @@
     grid-area: infoWord
 }
 
+ul{
+    display:  inline-block;
+    columns: 3;
+    width: 100%;
+    padding-inline-start: 20px;
+    margin: 5% auto;
+}
+
 li{
     list-style-type: circle;
     width:  100%;
-
 }
 
-@media screen and (min-width: 650px){
+.rainPics{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5{
+    margin-bottom: 0;
+}
+
+.info>h3, .info>h5, .info>li{
+    text-align:  center;
+}
+
+@media screen and (min-width: 510px){
+    .module{
+        margin: 0 auto 10%;
+    }
+    .info{
+    padding-left: 10%;
+    }
+}
+
+@media screen and (min-width: 610px){
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -94,7 +125,7 @@ li{
             "infoHike hike"
             "word infoWord"
             "infoRain rain";
-        grid-gap: 1em;
+        grid-gap: .5em;
         max-width: 90%;
     }
 
@@ -105,6 +136,9 @@ li{
         margin: 0 auto;
         height: 50%;
     }
+    .info{
+        padding-left: 10%;
+}
 }
 
 @media screen and (min-width: 1080px){
@@ -127,4 +161,11 @@ li{
         align-items: center;
     }
 
+    .rainPics{
+        margin: 0 2%;
+        width: 100%;
+    }
+    .info{
+        padding-left: 10%;
+    }
 }

@@ -8,6 +8,7 @@ const whatch = "https://imgur.com/EfAzTDM.png"
 const hikeHitch = "https://i.imgur.com/2R9Tcvd.jpg?1.png"
 const unscrambler = "https://i.imgur.com/IuXeeJh.png?1.png"
 const rainOrShine = "https://i.imgur.com/lLBHBc4.png?1.png"
+const weather = "https://i.imgur.com/ys6pNdZ.png?2"
 
 const Projects = props =>(
     <div className="projects">
@@ -72,12 +73,22 @@ const Projects = props =>(
             </div>
 
             <div className="rain">
-                <div className="module">
-                    <a    target="_blank"
+                <div className="module ">
+                    <div className="rainPics" >
+                        <a    target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://glacial-wave-90784.herokuapp.com/"> 
+                           <img className="images" src={weather} alt="Rain or Shine Weather screenshot"></img>
+                        </a>
+                    </div>
+                    <div className="rainPics">
+                        <a    target="_blank"
                             rel="noopener noreferrer"
                             href="https://glacial-wave-90784.herokuapp.com/"> 
-                        <img className="images " src={rainOrShine} alt="Rain or Shine screenshot"></img>
-                    </a>
+                                <img className="images" src={rainOrShine} alt="Rain or Shine screenshot"></img>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
