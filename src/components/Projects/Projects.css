@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: repeat(4, .2fr .7fr);
+    grid-template-rows: repeat(4,  .4fr  .7fr);
     grid-template-areas:
         "whatch"
         "infoWhatch"
@@ -22,7 +22,7 @@
 }
 
 .images{
-    width: 100%;
+    max-width: 90%;
     border: black 2px solid;
     box-shadow: 3px 2px 2px 3px rgb(83, 83, 83);
     border-radius: 4px;
@@ -105,21 +105,16 @@ h5{
 .info>h3, .info>h5, .info>li{
     text-align:  center;
 }
+@media screen and (min-width: 490px){
+    grid-template-rows: repeat(4,  .5fr  .8fr);
 
-@media screen and (min-width: 510px){
-    .module{
-        margin: 0 auto 10%;
-    }
-    .info{
-    padding-left: 10%;
-    }
 }
 
-@media screen and (min-width: 610px){
+@media screen and (min-width: 800px){
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(4,.3fr .7fr));
         grid-template-areas:
             "whatch infoWhatch" 
             "infoHike hike"
@@ -138,20 +133,27 @@ h5{
     }
     .info{
         padding-left: 10%;
+    }
+    
 }
+
+@media screen and (min-width: 800px){
+    .grid-container{
+        width: 90%
+    }
 }
 
 @media screen and (min-width: 1080px){
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: 1fr .75fr  .75fr  .75fr;
         grid-template-areas:
             "whatch infoWhatch" 
             "infoHike hike"
             "word infoWord"
             "infoRain rain";
-        grid-gap: 1em;
+        grid-gap: 2em;
         grid-column-gap: 1em;
     }
 
