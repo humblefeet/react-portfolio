@@ -3,7 +3,7 @@ import './App.css';
 import Homepage from './components/Homepage/Homepage'
 import Projects from './components/Projects/Projects'
 import Resume from './components/Resume/Resume'
-import NavBar from './components/NavBar/NavBar'
+// import NavBar from './components/NavBar/NavBar'
 import {
   BrowserRouter as Router,
   Link,

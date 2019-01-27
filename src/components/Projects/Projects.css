@@ -46,6 +46,7 @@ ul{
 li{
     list-style-type: circle;
     width:  100%;
+    font-size: 1.25rem ;
 }
 
 .rainPics{
@@ -61,4 +62,11 @@ h5{
 
 .info>h3, .info>h5, .info>li{
     text-align:  center;
+}
+
+.appDescription{
+    font-size: 1.5rem;
+}
+.appTitle{
+    font-size: 2.25rem;
 }

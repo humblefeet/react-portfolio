@@ -26,9 +26,9 @@ const Projects = props =>(
                     </div>
                 </div>
                 <div className="infoWhatch info col-md-7 order-md-2">
-                    <h3 className="featurette-heading">Whatch</h3>
+                    <h3 className="featurette-heading appTitle">Whatch</h3>
                     <h5>Front-End Developer  |  Concept Designer  |  Style</h5>
-                    <p>A full stack web application in which users are given movie suggestions based on images they select.
+                    <p className="appDescription">A full stack web application in which users are given movie suggestions based on images they select.
                         These images are associated with genres of film, which are then used to make an API call to The Movie Database. 
                         When the user selects a title from the list to movies, they are given a synopsis of the title as well as where it is streaming online.</p>
                     <ul>
@@ -59,9 +59,9 @@ const Projects = props =>(
                 </div>
 
                 <div className="infoHike info col-md-7 order-md-2">
-                    <h3 className="featurette-heading">HikeHitch</h3>
+                    <h3 className="featurette-heading appTitle">HikeHitch</h3>
                     <h5>Full-Stack Developer</h5>
-                    <p>A full stack hiking trail organizer. User has the opportunity to add trails to the database based on difficulty and length.
+                    <p className="appDescription">A full stack hiking trail organizer. User has the opportunity to add trails to the database based on difficulty and length.
                         User can see other users hiking similar trails in order to organize ride shares. 
                     </p>
                     <ul>
@@ -97,9 +97,9 @@ const Projects = props =>(
                 </div>
 
                 <div className="infoRain info col-md-7 order-md-2">
-                    <h3 className="featurette-heading">Rain-or-Shine</h3>
+                    <h3 className="featurette-heading appTitle">Rain-or-Shine</h3>
                     <h5>Full-Stack Developer</h5>
-                    <p>A full stack MERN application built using React. 
+                    <p className="appDescription">A full stack MERN application built using React. 
                         Activity and venue recommendations are given based on the weather of the user's current location. 
                         Dark Sky's API was used for the weather and FourSquare was used for the venue recommendations.
                     </p>
@@ -131,9 +131,9 @@ const Projects = props =>(
                 </div>
 
                 <div className="infoWord info col-md-7 order-md-2">
-                    <h3 className="featurette-heading">Unscrambler</h3>
+                    <h3 className="featurette-heading appTitle">Unscrambler</h3>
                     <h5>Front-End Developer</h5>
-                    <p>A front-end education word game. Users must spell out words which are scrambled on a grid on the screen.
+                    <p className="appDescription">A front-end education word game. Users must spell out words which are scrambled on a grid on the screen.
                         Difficulty progresses with each level. This is the first project I created using Javascript.</p>
                     <ul>
                         <li>Javascript</li>
