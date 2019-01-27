@@ -13,10 +13,12 @@ const Resume = () => (
                 <h1 className="introResume" >Resume</h1>
             </div>
         </PageHeader>
+        
+        <div className="button">
             <a href={ResumeFile} download>
-                <button className="button">Download</button>
+                <button >Download</button>
             </a>
-
+        </div>
     </div>
 )
 

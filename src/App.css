@@ -20,10 +20,13 @@ body{
   align-content: center;
 }
 nav{
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   padding: 2%;
   margin: 0 auto;
+  text-align: center;
+  color: #253c66;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
