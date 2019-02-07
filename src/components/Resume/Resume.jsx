@@ -1,16 +1,13 @@
 import React from 'react';
 import './Resume.css'
-import {PageHeader} from 'react-bootstrap'
-import ResumeFile from '../../files/matthieu_bourgois_resume.pdf'
+import ResumeFile from '../../files/matthieubourgois_resume_2019_February.pdf'
 import Footer from '../../components/Footer/Footer'
 
 
 const Resume = () => (
     <div className="mainResume">
         <Footer/>
-        {/* <PageHeader> */}
             <h1 className="introResume" >Resume</h1>
-        {/* </PageHeader> */}
 
         <div className="buttonContainer">
             <a href={ResumeFile} download>
@@ -25,8 +22,8 @@ const Resume = () => (
             </div>
             <div class="resumeSummary">
                 <p>With a passion for discovery, I'm drawn to the taking the road less traveled.
-                   Making websites more interactive and attractive is a continuous goal.
-                   Building fun web applications is a creative outlet I enjoy exercising.
+                    Making websites more interactive and attractive is a continuous goal.
+                    Building fun web applications is a creative outlet I enjoy exercising.
                 </p>  
             </div>
 
