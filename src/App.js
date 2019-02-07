@@ -23,9 +23,12 @@ class App extends Component {
           </nav>
           <div className="main">
             <Switch>
-              <Route exact path="/" component={Homepage}></Route>
-              <Route exact path="/projects" component={Projects}></Route>
-              <Route exact path="/resume" component={Resume}></Route>
+              <Route exact path="/" 
+                render={props=>(<Homepage/>)}/>
+              <Route exact path="/projects" 
+                render={props=>(<Projects/>)}></Route>
+              <Route exact path="/resume" 
+                component={props=>(<Resume/>)}></Route>
             </Switch>
           </div>
 
